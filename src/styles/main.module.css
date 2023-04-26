@@ -1,0 +1,19 @@
+.main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+}
+
+.main > * {
+    padding: 1em;
+}
+
+.main__elements {
+    border-left: 0.1em solid var(--primary-border-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20.3125em, 1fr));
+    grid-auto-rows: 9.125em;
+    gap: 1em;
+    overflow-y: scroll;
+}

@@ -1,0 +1,8 @@
+.input__label {
+    position: relative;
+}
+
+.input__icon {
+    position: absolute;
+    background-color: red;
+}

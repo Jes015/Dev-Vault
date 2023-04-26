@@ -1,0 +1,27 @@
+.tool__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.8em;
+
+    background-color: var(--terceary-background-color);
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+
+.tool__container:hover {
+    background-color: var(--hover-background-color);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px
+}
+
+.tool__main {
+    padding-top: 0.6em;
+    flex-grow: 1;
+
+    color: var(--seconday-foreground-color);
+}
+
+.tool__footer {
+    display: flex;
+    align-self: flex-end;
+}
