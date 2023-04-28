@@ -15,6 +15,7 @@ interface props {
 }
 
 const incons = {
+    [ECategories.NONE]: <span>None</span>,
     [ECategories.REACT]: <IconReact key={ECategories.REACT} />,
     [ECategories.API]: <IconApi key={ECategories.API} />,
     [ECategories.DESIGN]: <IconDesign key={ECategories.DESIGN} />,

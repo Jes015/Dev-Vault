@@ -24,9 +24,8 @@ const Main = ({ dynamicTools }: props) => {
     // Animation's hook
     const [ref] = useAutoAnimate()
 
-    const { tools, setActualSearchParam, setCategory } = useApp(dynamicTools)
+    const { tools, setActualSearchParam, setCategory, pages, actualPage, setPage } = useApp(dynamicTools)
 
-    console.error('Hacer slice de los elementos (osea hacer paginación !!!!!importante!!!!)')
     return (
         <main className={styles.main}>
             <SideBar setActualSearchParam={setActualSearchParam} setCategory={setCategory} />

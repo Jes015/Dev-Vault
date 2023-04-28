@@ -19,7 +19,6 @@ const useApp = (dynamicTools: TTools) => {
   }
 
   // Tools
-  console.log('render')
 
   // Category
   const setCategory = (category: ECategories) => {
