@@ -24,11 +24,11 @@ const Main = ({ dynamicTools }: props) => {
     // Animation's hook
     const [ref] = useAutoAnimate()
 
-    const { tools, setActualSearchParam, setCategory, pages, actualPage, setPage } = useApp(dynamicTools)
+    const { tools, setActualSearchParam, setCategory, removeCategory } = useApp(dynamicTools)
 
     return (
         <main className={styles.main}>
-            <SideBar setActualSearchParam={setActualSearchParam} setCategory={setCategory} />
+            <SideBar setActualSearchParam={setActualSearchParam} setCategory={setCategory} removeCategory={removeCategory} />
             <section ref={ref} className={styles.main__elements}>
                 {tools[0] != null && tools.map((tool: ITool) => (<Tool categories={tool.category} title={tool.name} description={tool.description} url={tool.url} key={tool.id} />))}
             </section>

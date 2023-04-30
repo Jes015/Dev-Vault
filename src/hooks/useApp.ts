@@ -6,9 +6,9 @@ import { ECategories, TTools } from '@/types/apptypes'
 import useDebounce from '@/hooks/useDebounce'
 
 const useApp = (dynamicTools: TTools) => {
-  const [tools, setTools] = useState<TTools>(dynamicTools)
+  const [tools] = useState<TTools>(dynamicTools)
   const [searchParam, setSearchParam] = useState<string>('')
-  const [filterByCategory, setFilterByCategory] = useState<ECategories>(ECategories.NONE)
+  const [filtersByCategory, setFilterByCategory] = useState<ECategories[]>([])
 
   // Debounce
   const { newSearchParam } = useDebounce(searchParam)
@@ -22,7 +22,12 @@ const useApp = (dynamicTools: TTools) => {
 
   // Category
   const setCategory = (category: ECategories) => {
-    setFilterByCategory(category)
+    console.log([category, ...filtersByCategory])
+    setFilterByCategory([category, ...filtersByCategory])
+  }
+
+  const removeCategory = (delCategory: ECategories) => {
+    setFilterByCategory(filtersByCategory.filter((category) => category !== delCategory))
   }
 
   // Filters
@@ -31,10 +36,10 @@ const useApp = (dynamicTools: TTools) => {
   }, [newSearchParam, tools])
 
   const filteredTools = useMemo(() => {
-    return filterByCategory === ECategories.NONE ? foundTools : foundTools.filter((tool) => tool.category.includes(filterByCategory))
-  }, [foundTools, filterByCategory])
+    return !filtersByCategory[0] ? foundTools : foundTools.filter((tool) => tool.category.includes(filtersByCategory))
+  }, [foundTools, filtersByCategory])
 
-  return { tools: filteredTools, setActualSearchParam, setCategory }
+  return { tools: filteredTools, setActualSearchParam, setCategory, removeCategory }
 }
 
 export default useApp

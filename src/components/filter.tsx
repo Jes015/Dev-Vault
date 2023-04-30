@@ -1,3 +1,6 @@
+// Styles
+import styles from '@/styles/filter.module.css'
+
 // Types
 import { ECategories } from "@/types/apptypes"
 
@@ -12,7 +15,7 @@ const Filter = ({ category, setCategory }: props) => {
     }
 
     return (
-        <button onClick={handleOnClick}>
+        <button className={styles.filter} onClick={handleOnClick}>
             {category}
         </button>
     )
