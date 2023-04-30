@@ -2,11 +2,14 @@
 import { useMemo, useState } from 'react'
 
 // Types
-import { ECategories, TTools } from '@/types/apptypes'
 import useDebounce from '@/hooks/useDebounce'
+import { ECategories, TTools } from '@/types/apptypes'
 
 const useApp = (dynamicTools: TTools) => {
   const [tools, setTools] = useState<TTools>(dynamicTools)
+
+  // Filters
+  const [limitProducts, setLimitProducts] = useState<number>(18)
   const [searchParam, setSearchParam] = useState<string>('')
   const [filterByCategory, setFilterByCategory] = useState<ECategories>(ECategories.NONE)
 
@@ -25,16 +28,26 @@ const useApp = (dynamicTools: TTools) => {
     setFilterByCategory(category)
   }
 
+  const toggleLimitProducts = () => {
+    if (filteredTools.length < limitProducts) return
+    console.log('setting limit')
+    setLimitProducts(limitProducts + 10)
+  }
+
   // Filters
   const foundTools = useMemo(() => {
     return newSearchParam !== '' ? tools.filter((tool) => tool.name.toLowerCase().includes(newSearchParam.toLowerCase())) : tools
   }, [newSearchParam, tools])
 
-  const filteredTools = useMemo(() => {
-    return filterByCategory === ECategories.NONE ? foundTools : foundTools.filter((tool) => tool.category.includes(filterByCategory))
-  }, [foundTools, filterByCategory])
+  const acortedTools = useMemo(() => {
+    return foundTools.slice(0, limitProducts)
+  }, [foundTools, limitProducts])
 
-  return { tools: filteredTools, setActualSearchParam, setCategory }
+  const filteredTools = useMemo(() => {
+    return filterByCategory === ECategories.NONE ? acortedTools : acortedTools.filter((tool) => tool.category.includes(filterByCategory))
+  }, [acortedTools, filterByCategory])
+
+  return { tools: filteredTools, setActualSearchParam, setCategory, toggleLimitProducts }
 }
 
 export default useApp
