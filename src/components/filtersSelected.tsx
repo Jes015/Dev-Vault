@@ -16,7 +16,7 @@ const FiltersSelected = ({ categoriesSelected, removeCategory }: props) => {
     return (
         <section>
                 <h5 className={styles.filtersSelected__title}>Filters selected</h5>
-                {categoriesSelected[0] && categoriesSelected.map((category) => <Chip key={category} title={category} removeCategory={removeCategory} />)}
+                {categoriesSelected.length > 0 && categoriesSelected.map((category) => <Chip key={category} title={category} removeCategory={removeCategory} />)}
         </section>
     )
 }

@@ -17,7 +17,6 @@ interface props {
 }
 
 const SideBar = ({ setActualSearchParam, setCategory, removeCategory, categoriesSelected }: props) => {
-
     return (
         <section className={styles.sideBar}>
             <header>

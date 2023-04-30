@@ -39,24 +39,24 @@ const useApp = (dynamicTools: TTools) => {
   }
 
   // Filters
+  const filteredTools = useMemo(() => {
+    return !filtersByCategory[0] 
+      ? tools
+      : tools.filter((tool) =>{
+          return (tool.category.length === filtersByCategory.length) 
+                  && tool.category.every((category) => filtersByCategory.includes(category))
+        })
+  }, [tools, filtersByCategory])
+
   const foundTools = useMemo(() => {
-    return newSearchParam !== '' ? tools.filter((tool) => tool.name.toLowerCase().includes(newSearchParam.toLowerCase())) : tools
-  }, [newSearchParam, tools])
+    return newSearchParam !== '' ? filteredTools.filter((tool) => tool.name.toLowerCase().includes(newSearchParam.toLowerCase())) : filteredTools
+  }, [newSearchParam, filteredTools])
 
   const acortedTools = useMemo(() => {
     return foundTools.slice(0, limitProducts)
   }, [foundTools, limitProducts])
 
-  const filteredTools = useMemo(() => {
-    return !filtersByCategory[0] 
-      ? acortedTools
-      : acortedTools.filter((tool) =>{
-          return (tool.category.length === filtersByCategory.length) 
-                  && tool.category.every((category) => filtersByCategory.includes(category))
-        })
-  }, [acortedTools, filtersByCategory])
-
-  return { categoriesSelected: filtersByCategory, tools: filteredTools, setActualSearchParam, setCategory, removeCategory, toggleLimitProducts }
+  return { categoriesSelected: filtersByCategory, tools: acortedTools, setActualSearchParam, setCategory, removeCategory, toggleLimitProducts }
 }
 
 export default useApp

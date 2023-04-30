@@ -3,7 +3,6 @@ import { useEffect } from "react"
 const useInfiniteScroll = (lastElement: Element, toggleLimitProducts: () => void) => {
     useEffect(() => {
         if (lastElement == null) return
-        console.log(lastElement)
         const observer = new IntersectionObserver((entries) => {
             const [firstEntry] = entries
 
