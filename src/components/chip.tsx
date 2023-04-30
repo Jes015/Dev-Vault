@@ -9,7 +9,7 @@ import { ECategories } from '@/types/apptypes'
 
 interface props {
     title: ECategories,
-    removeCategory: (filter: ECategories) => void
+    removeCategory: (category: ECategories) => void
 }
 
 const Chip = ({ title, removeCategory }: props) => {

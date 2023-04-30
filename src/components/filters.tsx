@@ -13,10 +13,13 @@ interface props {
 
 const Filters = ({ setCategory }: props) => {
     return (
-        <section className={styles.filters}>
+        <section>
+            <h3>Filter by</h3>
+            <div className={styles.filters}>
             {
                 Object.keys(ECategories).map((cateogry) => <Filter key={cateogry} category={cateogry as ECategories} setCategory={setCategory}/> )
             }
+            </div>
         </section>
     )
 }
