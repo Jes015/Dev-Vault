@@ -22,7 +22,7 @@ const useApp = (dynamicTools: TTools) => {
 
   // Category
   const setCategory = (category: ECategories) => {
-    console.log([category, ...filtersByCategory])
+    if (filtersByCategory.includes(category)) return
     setFilterByCategory([category, ...filtersByCategory])
   }
 
@@ -36,10 +36,15 @@ const useApp = (dynamicTools: TTools) => {
   }, [newSearchParam, tools])
 
   const filteredTools = useMemo(() => {
-    return !filtersByCategory[0] ? foundTools : foundTools.filter((tool) => tool.category.includes(filtersByCategory))
+    return !filtersByCategory[0] 
+      ? foundTools
+      : foundTools.filter((tool) =>{
+          return (tool.category.length === filtersByCategory.length) 
+                  && tool.category.every((category) => filtersByCategory.includes(category))
+        })
   }, [foundTools, filtersByCategory])
 
-  return { tools: filteredTools, setActualSearchParam, setCategory, removeCategory }
+  return { categoriesSelected: filtersByCategory, tools: filteredTools, setActualSearchParam, setCategory, removeCategory }
 }
 
 export default useApp
