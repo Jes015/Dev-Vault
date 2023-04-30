@@ -26,15 +26,15 @@ const Main = ({ dynamicTools }: props) => {
     // Animation's hook
     const [ref] = useAutoAnimate()
 
-    const { tools, setActualSearchParam, setCategory, toggleLimitProducts } = useApp(dynamicTools)
+    const { tools, setActualSearchParam, setCategory, toggleLimitProducts, removeCategory, categoriesSelected } = useApp(dynamicTools)
 
     const lastElement = useRef<HTMLInputElement>(null)
 
-    useInfiniteScroll(lastElement.current as unknown as Element, toggleLimitProducts)
+    useInfiniteScroll(lastElement.current as Element, toggleLimitProducts)
 
     return (
         <main className={styles.main}>
-            <SideBar setActualSearchParam={setActualSearchParam} setCategory={setCategory} />
+            <SideBar categoriesSelected={categoriesSelected} setActualSearchParam={setActualSearchParam} setCategory={setCategory} removeCategory={removeCategory} />
             <section ref={ref} className={styles.main__elements}>
                 {tools[0] != null && tools.map((tool: ITool) => (<Tool categories={tool.category} title={tool.name} description={tool.description} url={tool.url} key={tool.id} />))}
                 <div ref={lastElement}/>

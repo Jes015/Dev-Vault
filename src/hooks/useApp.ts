@@ -6,12 +6,12 @@ import useDebounce from '@/hooks/useDebounce'
 import { ECategories, TTools } from '@/types/apptypes'
 
 const useApp = (dynamicTools: TTools) => {
-  const [tools, setTools] = useState<TTools>(dynamicTools)
+  const [tools] = useState<TTools>(dynamicTools)
 
   // Filters
   const [limitProducts, setLimitProducts] = useState<number>(18)
   const [searchParam, setSearchParam] = useState<string>('')
-  const [filterByCategory, setFilterByCategory] = useState<ECategories>(ECategories.NONE)
+  const [filtersByCategory, setFilterByCategory] = useState<ECategories[]>([])
 
   // Debounce
   const { newSearchParam } = useDebounce(searchParam)
@@ -25,12 +25,16 @@ const useApp = (dynamicTools: TTools) => {
 
   // Category
   const setCategory = (category: ECategories) => {
-    setFilterByCategory(category)
+    if (filtersByCategory.includes(category)) return
+    setFilterByCategory([category, ...filtersByCategory])
+  }
+
+  const removeCategory = (delCategory: ECategories) => {
+    setFilterByCategory(filtersByCategory.filter((category) => category !== delCategory))
   }
 
   const toggleLimitProducts = () => {
     if (filteredTools.length < limitProducts) return
-    console.log('setting limit')
     setLimitProducts(limitProducts + 10)
   }
 
@@ -44,10 +48,15 @@ const useApp = (dynamicTools: TTools) => {
   }, [foundTools, limitProducts])
 
   const filteredTools = useMemo(() => {
-    return filterByCategory === ECategories.NONE ? acortedTools : acortedTools.filter((tool) => tool.category.includes(filterByCategory))
-  }, [acortedTools, filterByCategory])
+    return !filtersByCategory[0] 
+      ? acortedTools
+      : acortedTools.filter((tool) =>{
+          return (tool.category.length === filtersByCategory.length) 
+                  && tool.category.every((category) => filtersByCategory.includes(category))
+        })
+  }, [acortedTools, filtersByCategory])
 
-  return { tools: filteredTools, setActualSearchParam, setCategory, toggleLimitProducts }
+  return { categoriesSelected: filtersByCategory, tools: filteredTools, setActualSearchParam, setCategory, removeCategory, toggleLimitProducts }
 }
 
 export default useApp

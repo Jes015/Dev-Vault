@@ -1,6 +1,7 @@
 .sideBar {
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
 
 .sideBar__main {

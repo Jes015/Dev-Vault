@@ -1,0 +1,10 @@
+.filter {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #bbb;
+}
+
+.filter:hover {
+    color: #ffffff;
+}

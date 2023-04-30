@@ -1,5 +1,4 @@
 enum ECategories {
-    NONE = 'NONE',
     DESIGN = 'DESIGN',
     API = 'API',
     REACT = 'REACT',

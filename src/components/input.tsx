@@ -14,7 +14,7 @@ const Input = ({ setActualSearchParam }: props) => {
     return (
         <label className={styles.input__label}>
             Search for tools
-            <input onInput={handleOnInput} placeholder="ex: timer, design" />
+            <input className={styles.input} onInput={handleOnInput} placeholder="ex: timer, design" />
         </label>
     )
 }
