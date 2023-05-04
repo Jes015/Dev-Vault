@@ -18,4 +18,4 @@ type TTools = ITool[]
 
 export type { ITool, TTools }
 export { ECategories }
-
+// eslint-disable-next-line no-multiple-empty-lines
