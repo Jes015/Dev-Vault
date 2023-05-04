@@ -8,7 +8,7 @@ import Head from 'next/head'
 import type { TTools } from '@/types/apptypes'
 
 // Mocks
-import toolsMock from '@/mocks/tools'
+import toolsMock from '@/mocks/tools.json'
 
 interface props {
   dynamicTools: TTools

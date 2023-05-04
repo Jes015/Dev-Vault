@@ -1,0 +1,309 @@
+[
+    {
+        "name": "Can i use",
+        "description": "An essential tool for web developers who seek to ensure compatibility and accessibility of their websites and applications across different browsers and devices used by their users.",
+        "url": "https://caniuse.com/",
+        "id": "caniuse",
+        "category": [
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "JSONPlaceholder",
+        "description": "Free fake API for testing and prototyping",
+        "url": "https://jsonplaceholder.typicode.com/",
+        "id": "JSONPlaceholder",
+        "category": [
+            "API"
+        ]
+    },
+    {
+        "name": "Font Awesome",
+        "description": "Internet's icon library and toolkit",
+        "url": "https://fontawesome.com/",
+        "id": "Font Awesome",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "Coolors",
+        "description": "A website for generating color palettes that helps graphic designers, artists, and creatives find inspiration and create color combinations for their projects.",
+        "url": "https://coolors.co/",
+        "id": "Coolors",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "Hero Patterns",
+        "description": "Collection of repeatable SVG background patterns for you to use on your web projects.",
+        "url": "https://heropatterns.com/",
+        "id": "Hero Patterns",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "ScrollReveal",
+        "description": "JavaScript library that provides a simple and easy-to-use way to animate and reveal elements as the user scrolls down a web page.",
+        "url": "https://scrollrevealjs.org/",
+        "id": "ScrollReveal",
+        "category": [
+            "ANIMATION"
+        ]
+    },
+    {
+        "name": "CSS Gradient",
+        "description": "Website that offers a simple and easy-to-use tool for creating custom gradient backgrounds using CSS.",
+        "url": "https://cssgradient.io/",
+        "id": "CSS Gradient",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "Form Sumbit",
+        "description": "Create custom HTML forms for websites or applications and then receive form submissions via email without having to write any server-side code.",
+        "url": "https://formsubmit.co/",
+        "id": "Form Sumbit",
+        "category": [
+            "EMAIL"
+        ]
+    },
+    {
+        "name": "Scrollbar.app",
+        "description": "Website that provides a simple and customizable solution for creating custom scrollbars for websites and applications.",
+        "url": "https://scrollbar.app/",
+        "id": "Scrollbar.app",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "Squoosh",
+        "description": "Free online image compression tool for web developers and designers.",
+        "url": "https://squoosh.app/",
+        "id": "Squoosh",
+        "category": [
+            "IMAGE"
+        ]
+    },
+    {
+        "name": "Storyset",
+        "description": "Collection of customizable vector illustrations and animations for use in various digital projects.",
+        "url": "https://storyset.com/",
+        "id": "Storyset",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "AnimatiSS",
+        "description": "Collection of CSS animations,",
+        "url": "https://xsgames.co/animatiss/",
+        "id": "AnimatiSS",
+        "category": [
+            "ANIMATION"
+        ]
+    },
+    {
+        "name": "Dribbble",
+        "description": "A platform for designers to showcase their work, discover new trends, and connect with other designers.",
+        "url": "https://dribbble.com/",
+        "id": "Dribbble",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "Can i include",
+        "description": "A web tool that checks the accessibility and semantic structure of HTML code on a website to ensure it is compatible for people with visual and motor disabilities.",
+        "url": "https://caninclude.glitch.me/",
+        "id": "CanInclude",
+        "category": [
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "RapidAPI",
+        "description": "A marketplace for APIs, where developers can discover and connect to over 20,000 APIs, manage and track usage, and easily deploy code snippets.",
+        "url": "https://rapidapi.com/",
+        "id": "RapidAPI",
+        "category": [
+            "API",
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "HTTP Cats",
+        "description": "A website that provides a collection of HTTP status codes illustrated by cute cat images, making it a fun and entertaining way to debug and troubleshoot HTTP errors.",
+        "url": "https://httpcats.com/",
+        "id": "HTTP Cats",
+        "category": [
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "Pravatar",
+        "description": "A simple API for generating random avatar images.",
+        "url": "https://pravatar.cc/",
+        "id": "Pravatar",
+        "category": [
+            "API"
+        ]
+    },
+    {
+        "name": "Heroicons",
+        "description": "Free, open-source icon library designed for use in web, iOS, Android, and desktop apps",
+        "url": "https://heroicons.com/",
+        "id": "Heroicons",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "Unavatar",
+        "description": "A simple API to fetch avatar photos from popular sources like Twitter, GitHub, and many others based on an email or username.",
+        "url": "https://unavatar.io/#/",
+        "id": "Unavatar",
+        "category": [
+            "API"
+        ]
+    },
+    {
+        "name": "Shortcode.dev",
+        "description": "A collection of useful, well-documented code snippets that you can use to speed up your development process.",
+        "url": "https://shortcode.dev/",
+        "id": "Shortcode.dev",
+        "category": [
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "Netlify",
+        "description": "All-in-one platform for automating modern web projects",
+        "url": "https://netlify.com/",
+        "id": "Netlify",
+        "category": [
+            "HOSTING"
+        ]
+    },
+    {
+        "name": "Node.green",
+        "description": "A website that provides a comprehensive overview of the current state of support for various ECMAScript versions and features in different versions of Node.js.",
+        "url": "https://node.green/",
+        "id": "node.green",
+        "category": [
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "Shaper",
+        "description": "Generative Design Tool for UI Interfaces.",
+        "url": "https://shaper.design/",
+        "id": "shaper",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "React SVG Icons",
+        "description": "A collection of customizable, SVG-based icons for React",
+        "url": "https://reactsvgicons.com/",
+        "id": "React SVG Icons",
+        "category": [
+            "DESIGN",
+            "REACT"
+        ]
+    },
+    {
+        "name": "Iconoir",
+        "description": "Free vector icons for personal and commercial use.",
+        "url": "https://iconoir.com/",
+        "id": "Iconoir",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "Toggles",
+        "description": "Theme toggles is a collection of awesome, easy to use, animated toggles; designed for switching between light and dark modes.",
+        "url": "https://toggles.dev/",
+        "id": "Toggles",
+        "category": [
+            "DESIGN"
+        ]
+    },
+    {
+        "name": "Bundlephobia",
+        "description": "A tool for finding the cost of adding a npm package to your bundle",
+        "url": "https://bundlephobia.com/",
+        "id": "bundlephobia",
+        "category": [
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "AI Tools",
+        "description": "A collection of AI-powered tools and resources for developers and designers",
+        "url": "https://aitools.fyi/",
+        "id": "aitools",
+        "category": [
+            "INFORMATION",
+            "AI"
+        ]
+    },
+    {
+        "name": "Tome",
+        "description": "Presentations with IA.",
+        "url": "https://beta.tome.app/",
+        "id": "tome",
+        "category": [
+            "AI"
+        ]
+    },
+    {
+        "name": "OpenAI Chat",
+        "description": "A platform for creating AI-powered chatbots and virtual assistants",
+        "url": "https://chat.openai.com/",
+        "id": "openai-chat",
+        "category": [
+            "AI",
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "APIslist",
+        "description": "A curated list of public APIs for development",
+        "url": "https://apislist.com/",
+        "id": "apislist",
+        "category": [
+            "API",
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "Color Magic",
+        "description": "Color palette generator with AI.",
+        "url": "https://colormagic.app/",
+        "id": "colormagic",
+        "category": [
+            "DESIGN",
+            "AI"
+        ]
+    },
+    {
+        "name": "Phind",
+        "description": "The AI search engine for developers.",
+        "url": "https://www.phind.com/",
+        "id": "phind",
+        "category": [
+            "AI",
+            "INFORMATION"
+        ]
+      }
+      
+  ]
+  
+  

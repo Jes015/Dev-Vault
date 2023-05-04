@@ -5,7 +5,7 @@ import styles from '@/styles/tools.module.css'
 import { ECategories } from '@/types/apptypes'
 
 // Icons
-import { IconAnimation, IconApi, IconDesign, IconInformation, IconReact } from './icons'
+import { IconAI, IconAnimation, IconApi, IconDesign, IconEmail, IconHosting, IconImage, IconInformation, IconReact } from './icons'
 
 interface props {
   title: string
@@ -19,7 +19,11 @@ const incons = {
   [ECategories.API]: <IconApi key={ECategories.API} />,
   [ECategories.DESIGN]: <IconDesign key={ECategories.DESIGN} />,
   [ECategories.ANIMATION]: <IconAnimation key={ECategories.ANIMATION} />,
-  [ECategories.INFORMATION]: <IconInformation key={ECategories.INFORMATION} />
+  [ECategories.INFORMATION]: <IconInformation key={ECategories.INFORMATION} />,
+  [ECategories.EMAIL]: <IconEmail key={ECategories.EMAIL} />,
+  [ECategories.IMAGE]: <IconImage key={ECategories.IMAGE} />,
+  [ECategories.HOSTING]: <IconHosting key={ECategories.HOSTING} />,
+  [ECategories.AI]: <IconAI key={ECategories.AI} />
 }
 
 const Tool = ({ title, description, url, categories }: props) => {

@@ -3,7 +3,11 @@ enum ECategories {
   API = 'API',
   REACT = 'REACT',
   ANIMATION = 'ANIMATION',
-  INFORMATION = 'INFORMATION'
+  INFORMATION = 'INFORMATION',
+  EMAIL = 'EMAIL',
+  IMAGE = 'IMAGE',
+  HOSTING = 'HOSTING',
+  AI = 'AI'
 }
 
 interface ITool {
