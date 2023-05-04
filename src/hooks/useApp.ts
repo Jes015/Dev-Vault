@@ -40,12 +40,12 @@ const useApp = (dynamicTools: TTools) => {
 
   // Filters
   const filteredTools = useMemo(() => {
-    return !filtersByCategory[0] 
+    return filtersByCategory[0] == null
       ? tools
-      : tools.filter((tool) =>{
-          return (tool.category.length === filtersByCategory.length) 
-                  && tool.category.every((category) => filtersByCategory.includes(category))
-        })
+      : tools.filter((tool) => {
+        return (tool.category.length === filtersByCategory.length) &&
+                  tool.category.every((category) => filtersByCategory.includes(category))
+      })
   }, [tools, filtersByCategory])
 
   const foundTools = useMemo(() => {

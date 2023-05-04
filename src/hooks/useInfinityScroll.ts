@@ -1,23 +1,22 @@
-import { useEffect } from "react"
+import { useEffect } from 'react'
 
 const useInfiniteScroll = (lastElement: Element, toggleLimitProducts: () => void) => {
-    useEffect(() => {
-        if (lastElement == null) return
-        const observer = new IntersectionObserver((entries) => {
-            const [firstEntry] = entries
+  useEffect(() => {
+    if (lastElement == null) return
+    const observer = new IntersectionObserver((entries) => {
+      const [firstEntry] = entries
 
-            if (!firstEntry.isIntersecting) return
+      if (!firstEntry.isIntersecting) return
 
-            toggleLimitProducts()
-        })
+      toggleLimitProducts()
+    })
 
-        observer.observe(lastElement)
+    observer.observe(lastElement)
 
-        return () => {
-            observer.disconnect()
-        }
-    }, [lastElement, toggleLimitProducts])
-
+    return () => {
+      observer.disconnect()
+    }
+  }, [lastElement, toggleLimitProducts])
 }
 
 export default useInfiniteScroll
