@@ -29,7 +29,8 @@ export default App
 
 export async function getStaticProps () {
   const apikey = process.env.JSONBIN as string
-  const dynamicTools = toolsMock // await helpHttps().get('https://api.jsonbin.io/v3/b/6444893eb89b1e22998fa0ee', apikey).record
+  console.log(apikey)
+  const dynamicTools = toolsMock // (await helpHttps().get('https://api.jsonbin.io/v3/b/6444893eb89b1e22998fa0ee', apikey)).record
 
   return {
     props: {

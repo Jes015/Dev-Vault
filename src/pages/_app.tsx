@@ -1,6 +1,9 @@
 // Types
 import type { AppProps } from 'next/app'
 
+// Analytics
+import { Analytics } from '@vercel/analytics/react'
+
 // Styles
 import '@/styles/global.css'
 import '@/styles/normalize.css'
@@ -13,8 +16,11 @@ const roboto = Roboto({
 
 export default function App ({ Component, pageProps }: AppProps) {
   return (
-    <main className={roboto.className}>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <main className={roboto.className}>
+        <Component {...pageProps} />
+      </main>
+      <Analytics />
+    </>
   )
 }
