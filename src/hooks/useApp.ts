@@ -43,8 +43,9 @@ const useApp = (dynamicTools: TTools) => {
     return filtersByCategory[0] == null
       ? tools
       : tools.filter((tool) => {
-        return (tool.category.length === filtersByCategory.length) &&
-                  tool.category.every((category) => filtersByCategory.includes(category))
+        if (filtersByCategory.length === 1) return tool.category.some((category) => filtersByCategory.includes(category))
+
+        return tool.category.length === filtersByCategory.length && tool.category.every((category) => filtersByCategory.includes(category))
       })
   }, [tools, filtersByCategory])
 
