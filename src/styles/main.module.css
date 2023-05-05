@@ -16,3 +16,10 @@
     gap: 1em;
     overflow-y: scroll;
 }
+
+@media screen and (max-width: 500px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 10fr;
+    }
+}

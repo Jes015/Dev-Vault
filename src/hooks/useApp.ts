@@ -5,11 +5,13 @@ import { useMemo, useState } from 'react'
 import useDebounce from '@/hooks/useDebounce'
 import { ECategories, TTools } from '@/types/apptypes'
 
+const maxProductsPerViewPort = 18
+
 const useApp = (dynamicTools: TTools) => {
   const [tools] = useState<TTools>(dynamicTools)
 
   // Filters
-  const [limitProducts, setLimitProducts] = useState<number>(18)
+  const [limitProducts, setLimitProducts] = useState<number>(maxProductsPerViewPort)
   const [searchParam, setSearchParam] = useState<string>('')
   const [filtersByCategory, setFilterByCategory] = useState<ECategories[]>([])
 
@@ -35,7 +37,7 @@ const useApp = (dynamicTools: TTools) => {
 
   const toggleLimitProducts = () => {
     if (filteredTools.length < limitProducts) return
-    setLimitProducts(limitProducts + 10)
+    setLimitProducts(limitProducts + maxProductsPerViewPort)
   }
 
   // Filters
@@ -57,7 +59,7 @@ const useApp = (dynamicTools: TTools) => {
     return foundTools.slice(0, limitProducts)
   }, [foundTools, limitProducts])
 
-  return { categoriesSelected: filtersByCategory, tools: acortedTools, setActualSearchParam, setCategory, removeCategory, toggleLimitProducts }
+  return { categoriesSelected: filtersByCategory, tools: acortedTools, setActualSearchParam, setCategory, removeCategory, toggleLimitProducts, limitProducts }
 }
 
 export default useApp
