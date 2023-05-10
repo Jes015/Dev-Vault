@@ -17,7 +17,7 @@
     overflow-y: scroll;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1180px) {
     .main {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 10fr;

@@ -1,22 +1,27 @@
 import { useEffect } from 'react'
 
-const useInfiniteScroll = (lastElement: Element, toggleLimitProducts: () => void) => {
+const useInfiniteScroll = (lastElement: Element, toggleLimitProducts: () => void, cantProducts: number, limitProductsPerPage: number) => {
   useEffect(() => {
-    if (lastElement == null) return
-    const observer = new IntersectionObserver((entries) => {
-      const [firstEntry] = entries
+    if (lastElement == null || cantProducts < limitProductsPerPage) return
 
-      if (!firstEntry.isIntersecting) return
+    // Because the use of the useAutoAnimate hook results in a 150-millisecond delay for rendering all elements, it may be necessary to use a timeout when using the IntersectionObserver to avoid compatibility issues.
+    let observer: IntersectionObserver | null = null
+    setTimeout(() => {
+      observer = new IntersectionObserver((entries) => {
+        const [firstEntry] = entries
 
-      toggleLimitProducts()
-    })
+        if (!firstEntry.isIntersecting) return
 
-    observer.observe(lastElement)
+        toggleLimitProducts()
+      })
+
+      observer.observe(lastElement)
+    }, 200)
 
     return () => {
-      observer.disconnect()
+      (observer as IntersectionObserver).disconnect()
     }
-  }, [lastElement, toggleLimitProducts])
+  }, [lastElement, toggleLimitProducts, cantProducts, limitProductsPerPage])
 }
 
 export default useInfiniteScroll
