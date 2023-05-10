@@ -42,13 +42,16 @@ const useApp = (dynamicTools: TTools) => {
 
   // Filters
   const filteredTools = useMemo(() => {
-    return filtersByCategory[0] == null
-      ? tools
-      : tools.filter((tool) => {
-        if (filtersByCategory.length === 1) return tool.category.some((category) => filtersByCategory.includes(category))
+    if (filtersByCategory[0] == null) {
+      setLimitProducts(maxProductsPerPage)
+      return tools
+    }
 
-        return tool.category.length === filtersByCategory.length && tool.category.every((category) => filtersByCategory.includes(category))
-      })
+    return tools.filter((tool) => {
+      if (filtersByCategory.length === 1) return tool.category.some((category) => filtersByCategory.includes(category))
+
+      return tool.category.length === filtersByCategory.length && tool.category.every((category) => filtersByCategory.includes(category))
+    })
   }, [tools, filtersByCategory])
 
   const foundTools = useMemo(() => {

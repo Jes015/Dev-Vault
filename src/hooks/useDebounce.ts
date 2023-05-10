@@ -6,7 +6,7 @@ const useDebounce = (searchParam: string) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setNewSearchParam(searchParam)
-    }, 600)
+    }, 300)
 
     return () => {
       clearTimeout(timeout)

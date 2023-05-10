@@ -16,10 +16,12 @@ const useInfiniteScroll = (lastElement: Element, toggleLimitProducts: () => void
       })
 
       observer.observe(lastElement)
-    }, 200)
+    }, 150)
 
     return () => {
-      (observer as IntersectionObserver).disconnect()
+      if (observer instanceof IntersectionObserver) {
+        observer.disconnect()
+      }
     }
   }, [lastElement, toggleLimitProducts, cantProducts, limitProductsPerPage])
 }
