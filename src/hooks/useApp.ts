@@ -33,6 +33,8 @@ const useApp = (dynamicTools: TTools) => {
 
   const removeCategory = (delCategory: ECategories) => {
     setFilterByCategory(filtersByCategory.filter((category) => category !== delCategory))
+
+    if (filtersByCategory.length === 1) setLimitProducts(maxProductsPerPage)
   }
 
   const toggleLimitProducts = () => {
@@ -43,7 +45,6 @@ const useApp = (dynamicTools: TTools) => {
   // Filters
   const filteredTools = useMemo(() => {
     if (filtersByCategory[0] == null) {
-      setLimitProducts(maxProductsPerPage)
       return tools
     }
 
