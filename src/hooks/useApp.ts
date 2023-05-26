@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react'
 
 // Types
 import useDebounce from '@/hooks/useDebounce'
-import { ECategories, TTools } from '@/types/apptypes'
+import type { ECategories, TTools } from '@/types/apptypes'
 
 const maxProductsPerPage = 18
 

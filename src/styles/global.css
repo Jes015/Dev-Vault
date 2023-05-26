@@ -8,7 +8,12 @@
     --primary-border-color: #505050;
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     margin: 0;
 }
 
@@ -26,7 +31,7 @@ input {
     border-radius: .375rem;
     outline: 0.125em solid transparent;
     outline-offset: 0.125em;
-    
+
     color: inherit;
     font-family: inherit;
     background-color: var(--seconday-background-color);
@@ -41,3 +46,14 @@ input:focus {
     border-color: var(--primary-border-color);
 }
 
+.scrollBar::-webkit-scrollbar {
+    width: 0.2em
+}
+
+.scrollBar::-webkit-scrollbar-track {
+    background: var(--primary-background-color);
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+    background: var(--primary-border-color);
+}

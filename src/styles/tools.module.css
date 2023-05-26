@@ -1,6 +1,7 @@
 .tool__container {
     display: flex;
     flex-direction: column;
+    gap: 0.3em;
     height: 100%;
     padding: 0.8em;
 
@@ -17,6 +18,7 @@
 .tool__main {
     padding-top: 0.6em;
     flex-grow: 1;
+    overflow-y: auto;
 
     color: var(--seconday-foreground-color);
 }

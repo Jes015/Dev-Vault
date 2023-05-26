@@ -33,7 +33,7 @@ const Tool = ({ title, description, url, categories }: props) => {
         <header className={styles.tool__header}>
           <h3>{title}</h3>
         </header>
-        <main className={styles.tool__main}>
+        <main className={[styles.tool__main, 'scrollBar'].join(' ')}>
           <p>{description}</p>
         </main>
         <footer className={styles.tool__footer}>

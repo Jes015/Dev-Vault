@@ -1,7 +1,7 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "./node_modules/ts-standard/eslintrc.json"
+    "eslint-config-standard-with-typescript"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
