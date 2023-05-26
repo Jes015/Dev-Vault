@@ -1,5 +1,5 @@
 // Types
-import { ECategories } from '@/types/apptypes'
+import type { ECategories } from '@/types/apptypes'
 
 // Components
 import Filters from '@/components/filters'
@@ -28,8 +28,7 @@ const SideBar = ({ setActualSearchParam, setCategory, removeCategory, categories
         <FiltersSelected categoriesSelected={categoriesSelected} removeCategory={removeCategory} />
       </main>
       <footer>
-        Credits
-        Github
+        <a href='https://github.com/Jes015/Dev-Vault' target='_blank'>Github</a>
       </footer>
     </section>
   )

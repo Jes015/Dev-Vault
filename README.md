@@ -1,6 +1,6 @@
-# Developer Tools List
+# Dev Vault
 
-The Developer Tools List is a web application that provides a curated list of tools for web developers. The application allows users to filter tools by category and search for tools based on keywords. The list includes a wide variety of tools to support different areas of web development.
+Dev Vault is a web application that provides a curated list of tools for web developers. The application allows users to filter tools by category and search for tools based on keywords. The list includes a wide variety of tools to support different areas of web development.
 
 ## Features
 
@@ -13,5 +13,5 @@ To get started with the Developer Tools List, simply visit [the application webs
 
 ## Contributing
 
-We welcome contributions to the Developer Tools List! If you have a tool that you'd like to add to the list, or if you'd like to suggest an improvement or feature, please submit an issue or create a pull request on our GitHub repository.
+We welcome contributions to the Dev Vault! If you have a tool that you'd like to add to the list, or if you'd like to suggest an improvement or feature, please submit an issue or create a pull request on our GitHub repository.
 
