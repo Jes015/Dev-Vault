@@ -1,5 +1,5 @@
 // Types
-import { ECategories } from '@/types/apptypes'
+import type { ECategories } from '@/types/apptypes'
 
 // Custom components
 import Chip from '@/components/chip'

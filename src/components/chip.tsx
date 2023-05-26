@@ -5,7 +5,7 @@ import styles from '@/styles/chip.module.css'
 import { IconCloseCircle } from './icons'
 
 // Types
-import { ECategories } from '@/types/apptypes'
+import type { ECategories } from '@/types/apptypes'
 
 interface props {
   title: ECategories

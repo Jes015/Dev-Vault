@@ -2,7 +2,7 @@
 import styles from '@/styles/filter.module.css'
 
 // Types
-import { ECategories } from '@/types/apptypes'
+import type { ECategories } from '@/types/apptypes'
 
 interface props {
   category: ECategories
