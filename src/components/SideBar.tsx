@@ -2,9 +2,9 @@
 import type { ECategories } from '@/types/apptypes'
 
 // Components
-import Filters from '@/components/filters'
-import FiltersSelected from '@/components/filtersSelected'
-import Input from '@/components/input'
+import Filters from '@/components/Filters'
+import FiltersSelected from '@/components/FiltersSelected'
+import Input from '@/components/Input'
 
 // Styles
 import styles from '@/styles/sideBar.module.css'

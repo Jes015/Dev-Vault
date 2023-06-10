@@ -1,5 +1,5 @@
 // Components
-import Main from '@/components/main'
+import Main from '@/components/Main'
 import Head from 'next/head'
 
 // Helpers

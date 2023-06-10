@@ -1,6 +1,6 @@
 // Components
-import SideBar from '@/components/sideBar'
-import Tool from '@/components/tool'
+import SideBar from '@/components/SideBar'
+import Tool from '@/components/Tool'
 
 // Hooks
 import useApp from '@/hooks/useApp'

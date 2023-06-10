@@ -2,7 +2,7 @@
 import type { ECategories } from '@/types/apptypes'
 
 // Custom components
-import Chip from '@/components/chip'
+import Chip from '@/components/Chip'
 
 // Styles
 import styles from '@/styles/filtersSelected.module.css'

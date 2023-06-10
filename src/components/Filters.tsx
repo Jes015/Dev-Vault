@@ -5,7 +5,7 @@ import { filterSections, type ECategories } from '@/types/apptypes'
 
 // Styles
 import styles from '@/styles/filters.module.css'
-import Filter from './filter'
+import Filter from './Filter'
 
 interface props {
   setCategory: (category: ECategories) => void
