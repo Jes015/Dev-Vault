@@ -1,11 +1,11 @@
 // Components
-import Filter from './filter'
 
 // Types
-import { ECategories } from '@/types/apptypes'
+import { filterSections, type ECategories } from '@/types/apptypes'
 
 // Styles
 import styles from '@/styles/filters.module.css'
+import Filter from './filter'
 
 interface props {
   setCategory: (category: ECategories) => void
@@ -17,8 +17,16 @@ const Filters = ({ setCategory }: props) => {
       <h3>Filter by</h3>
       <div className={styles.filters}>
         {
-                Object.keys(ECategories).map((cateogry) => <Filter key={cateogry} category={cateogry as ECategories} setCategory={setCategory} />)
-            }
+          Object.entries(filterSections).map(([filterSectionName, filters]) => {
+            return (
+            <div key={filterSectionName}>
+              <span>{filterSectionName}</span>
+              {filters.map((cateogry) => <Filter key={cateogry} category={cateogry as ECategories} setCategory={setCategory} />)}
+            </div>
+            )
+          })
+          // )
+        }
       </div>
     </section>
   )

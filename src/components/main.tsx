@@ -34,7 +34,10 @@ const Main = ({ dynamicTools }: props) => {
     <main className={styles.main}>
       <SideBar categoriesSelected={categoriesSelected} setActualSearchParam={setActualSearchParam} setCategory={setCategory} removeCategory={removeCategory} />
       <section ref={animationsRef} className={[styles.main__elements, 'scrollBar'].join(' ')}>
-        {tools[0] != null && tools.map((tool: ITool) => (<Tool categories={tool.category} title={tool.name} description={tool.description} url={tool.url} key={tool.id} />))}
+        {tools.length !== 0
+          ? tools.map((tool: ITool) => (<Tool categories={tool.category} title={tool.name} description={tool.description} url={tool.url} key={tool.id} />))
+          : <h2>No tools found :(</h2>
+        }
         <div ref={lastElement} />
       </section>
     </main>

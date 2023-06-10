@@ -5,7 +5,9 @@ import styles from '@/styles/tools.module.css'
 import { ECategories } from '@/types/apptypes'
 
 // Icons
-import { IconAI, IconAnimation, IconApi, IconDesign, IconEmail, IconHosting, IconImage, IconInformation, IconReact } from './icons'
+
+// I can not use dynamic imports BY https://stackoverflow.com/questions/72491998/this-suspense-boundary-received-an-update-before-it-finished-hydrating-error
+import { IconAI, IconAnimation, IconApi, IconCSS, IconColor, IconEmail, IconFont, IconIcon, IconIlustration, IconImage, IconInformation, IconJavascript, IconOtherDesign, IconReact, IconTypescript, IconWebHosting } from './Icons'
 
 interface props {
   title: string
@@ -15,15 +17,22 @@ interface props {
 }
 
 const incons = {
-  [ECategories.REACT]: <IconReact key={ECategories.REACT} />,
+  [ECategories.AI]: <IconAI key={ECategories.AI} />,
   [ECategories.API]: <IconApi key={ECategories.API} />,
-  [ECategories.DESIGN]: <IconDesign key={ECategories.DESIGN} />,
   [ECategories.ANIMATION]: <IconAnimation key={ECategories.ANIMATION} />,
-  [ECategories.INFORMATION]: <IconInformation key={ECategories.INFORMATION} />,
+  [ECategories.COLOR]: <IconColor key={ECategories.COLOR} />,
+  [ECategories.CSS]: <IconCSS key={ECategories.CSS} />,
   [ECategories.EMAIL]: <IconEmail key={ECategories.EMAIL} />,
+  [ECategories.FONT]: <IconFont key={ECategories.FONT} />,
+  [ECategories.ICON]: <IconIcon key={ECategories.ICON} />,
+  [ECategories.ILUSTRATION]: <IconIlustration key={ECategories.ILUSTRATION} />,
   [ECategories.IMAGE]: <IconImage key={ECategories.IMAGE} />,
-  [ECategories.HOSTING]: <IconHosting key={ECategories.HOSTING} />,
-  [ECategories.AI]: <IconAI key={ECategories.AI} />
+  [ECategories.INFORMATION]: <IconInformation key={ECategories.INFORMATION} />,
+  [ECategories.JAVASCRIPT]: <IconJavascript key={ECategories.JAVASCRIPT} />,
+  [ECategories.OTHERSDESIGN]: <IconOtherDesign key={ECategories.OTHERSDESIGN} />,
+  [ECategories.REACT]: <IconReact key={ECategories.REACT} />,
+  [ECategories.TYPESCRIPT]: <IconTypescript key={ECategories.TYPESCRIPT} />,
+  [ECategories.WEBHOSTING]: <IconWebHosting key={ECategories.WEBHOSTING} />
 }
 
 const Tool = ({ title, description, url, categories }: props) => {

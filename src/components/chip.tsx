@@ -2,7 +2,7 @@
 import styles from '@/styles/chip.module.css'
 
 // Icons
-import { IconCloseCircle } from './icons'
+import IconCloseCircle from './Icons/IconCloseCircle'
 
 // Types
 import type { ECategories } from '@/types/apptypes'
@@ -16,6 +16,7 @@ const Chip = ({ title, removeCategory }: props) => {
   const handleOnClick = () => {
     removeCategory(title)
   }
+
   return (
     <div className={styles.chip} onClick={handleOnClick}>
       <IconCloseCircle />

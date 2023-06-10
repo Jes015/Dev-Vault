@@ -214,7 +214,19 @@
         "id": "React SVG Icons",
         "category": [
             "DESIGN",
-            "REACT"
+            "REACT",
+            "TYPESCRIPT"
+        ]
+    },
+    {
+        "name": "React SVG Icons2",
+        "description": "A collection of customizable, SVG-based icons for React",
+        "url": "https://reactsvgicons.com/",
+        "id": "React SVG Icons2",
+        "category": [
+            "DESIGN",
+            "REACT",
+            "ANIMATION"
         ]
     },
     {
