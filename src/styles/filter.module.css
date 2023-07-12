@@ -3,6 +3,7 @@
     border: none;
     cursor: pointer;
     color: #bbb;
+    font-size: 0.95em;
 }
 
 .filter:hover {

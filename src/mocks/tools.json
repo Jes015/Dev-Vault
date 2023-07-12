@@ -1,6 +1,6 @@
 [
     {
-        "name": "Can i use",
+        "name": "Can i no use",
         "description": "An essential tool for web developers who seek to ensure compatibility and accessibility of their websites and applications across different browsers and devices used by their users.",
         "url": "https://caniuse.com/",
         "id": "caniuse",
@@ -23,7 +23,7 @@
         "url": "https://fontawesome.com/",
         "id": "Font Awesome",
         "category": [
-            "DESIGN"
+            "FONT"
         ]
     },
     {
@@ -32,7 +32,7 @@
         "url": "https://coolors.co/",
         "id": "Coolors",
         "category": [
-            "DESIGN"
+            "COLOR"
         ]
     },
     {
@@ -41,7 +41,7 @@
         "url": "https://heropatterns.com/",
         "id": "Hero Patterns",
         "category": [
-            "DESIGN"
+            "CSS"
         ]
     },
     {
@@ -59,7 +59,7 @@
         "url": "https://cssgradient.io/",
         "id": "CSS Gradient",
         "category": [
-            "DESIGN"
+            "CSS"
         ]
     },
     {
@@ -77,7 +77,7 @@
         "url": "https://scrollbar.app/",
         "id": "Scrollbar.app",
         "category": [
-            "DESIGN"
+            "CSS"
         ]
     },
     {
@@ -95,7 +95,7 @@
         "url": "https://storyset.com/",
         "id": "Storyset",
         "category": [
-            "DESIGN"
+            "ILUSTRATION"
         ]
     },
     {
@@ -104,7 +104,7 @@
         "url": "https://xsgames.co/animatiss/",
         "id": "AnimatiSS",
         "category": [
-            "ANIMATION"
+            "CSS"
         ]
     },
     {
@@ -113,7 +113,7 @@
         "url": "https://dribbble.com/",
         "id": "Dribbble",
         "category": [
-            "DESIGN"
+            "OTHERSDESIGN"
         ]
     },
     {
@@ -159,7 +159,7 @@
         "url": "https://heroicons.com/",
         "id": "Heroicons",
         "category": [
-            "DESIGN"
+            "ICON"
         ]
     },
     {
@@ -186,7 +186,7 @@
         "url": "https://netlify.com/",
         "id": "Netlify",
         "category": [
-            "HOSTING"
+            "WEBHOSTING"
         ]
     },
     {
@@ -204,7 +204,7 @@
         "url": "https://shaper.design/",
         "id": "shaper",
         "category": [
-            "DESIGN"
+            "COLOR"
         ]
     },
     {
@@ -213,20 +213,8 @@
         "url": "https://reactsvgicons.com/",
         "id": "React SVG Icons",
         "category": [
-            "DESIGN",
-            "REACT",
-            "TYPESCRIPT"
-        ]
-    },
-    {
-        "name": "React SVG Icons2",
-        "description": "A collection of customizable, SVG-based icons for React",
-        "url": "https://reactsvgicons.com/",
-        "id": "React SVG Icons2",
-        "category": [
-            "DESIGN",
-            "REACT",
-            "ANIMATION"
+            "ICON",
+            "REACT"
         ]
     },
     {
@@ -235,7 +223,7 @@
         "url": "https://iconoir.com/",
         "id": "Iconoir",
         "category": [
-            "DESIGN"
+            "ICON"
         ]
     },
     {
@@ -244,7 +232,7 @@
         "url": "https://toggles.dev/",
         "id": "Toggles",
         "category": [
-            "DESIGN"
+            "OTHERSDESIGN"
         ]
     },
     {
@@ -301,7 +289,7 @@
         "url": "https://colormagic.app/",
         "id": "colormagic",
         "category": [
-            "DESIGN",
+            "COLOR",
             "AI"
         ]
     },
@@ -314,8 +302,280 @@
             "AI",
             "INFORMATION"
         ]
-      }
-      
-  ]
-  
-  
+    },
+    {
+        "name": "Boltcss",
+        "description": "Classless CSS framework.",
+        "url": "https://boltcss.com/",
+        "id": "Boltcss",
+        "category": [
+            "CSS"
+        ]
+    },
+    {
+        "name": "Classless CSS frameworks",
+        "description": "Classless CSS framework.",
+        "url": "https://github.com/dbohdan/classless-css",
+        "id": "Classless-CSS-frameworks",
+        "category": [
+            "CSS",
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "WinBox",
+        "description": "Modern HTML5 window manager for the web.",
+        "url": "https://nextapps-de.github.io/winbox/",
+        "id": "WinBox",
+        "category": [
+            "JAVASCRIPT"
+        ]
+    },
+    {
+        "name": "Shadow Gradients",
+        "description": "Genere css shadow gradients.",
+        "url": "https://alvarotrigo.com/shadow-gradients/",
+        "id": "shadow-gradients",
+        "category": [
+            "CSS"
+        ]
+    },
+    {
+        "name": "Raycast Wallpapers",
+        "description": "Wallpapers",
+        "url": "https://www.raycast.com/wallpapers",
+        "id": "raycast-wallpapers",
+        "category": [
+            "IMAGE"
+        ]
+    },
+    {
+        "name": "Happy Hues",
+        "description": "Curated colors in context.",
+        "url": "https://www.happyhues.co/",
+        "id": "happy-hues",
+        "category": [
+            "COLOR"
+        ]
+    },
+    {
+        "name": "Toools Design",
+        "description": "A growing archive of 1000+ design resources, weekly updated for the community.",
+        "url": "https://www.toools.design/",
+        "id": "toools-design",
+        "category": [
+            "INFORMATION",
+            "COLOR",
+            "ILUSTRATION",
+            "ICON",
+            "FONT"
+        ]
+    },
+    {
+        "name": "Uiball Loders",
+        "description": "Free loaders & spinners for your next project. Built with HTML, CSS and a soupçon of SVG.",
+        "url": "https://uiball.com/loaders",
+        "id": "uiball-loders",
+        "category": [
+            "CSS",
+            "REACT"
+        ]
+    },
+    {
+        "name": "Patterns Dev",
+        "description": "Improve how you architect webapps.",
+        "url": "https://www.patterns.dev/",
+        "id": "patterns-dev",
+        "category": [
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "wweb Dev",
+        "description": "Resources and Tools around Web Development.",
+        "url": "https://wweb.dev/resources",
+        "id": "wweb-dev",
+        "category": [
+            "CSS"
+        ]
+    },
+    {
+        "name": "ui goodies",
+        "description": "The best digital design resources from around the Web in one place.",
+        "url": "https://uigoodies.com/",
+        "id": "uigoodies",
+        "category": [
+            "INFORMATION",
+            "COLOR",
+            "ILUSTRATION",
+            "ICON",
+            "FONT",
+            "OTHERSDESIGN"
+        ]
+    },
+    {
+        "name": "Bansal Pattern CSS",
+        "description": "CSS only library to fill your empty background with beautiful patterns.",
+        "url": "https://bansal.io/pattern-css",
+        "id": "bansal-pattern-css",
+        "category": [
+            "CSS"
+        ]
+    },
+    {
+        "name": "useHooks",
+        "description": "A collection of modern, server-safe React hooks from the ui.dev team.",
+        "url": "https://usehooks.com/",
+        "id": "useHooks",
+        "category": [
+            "REACT"
+        ]
+    },
+    {
+        "name": "Million",
+        "description": "Gain big performance wins for UI and data heavy React apps.",
+        "url": "https://million.dev/",
+        "id": "million",
+        "category": [
+            "REACT"
+        ]
+    },
+    {
+        "name": "cssdb",
+        "description": "comprehensive list of CSS features and their positions in the process of becoming implemented web standards.",
+        "url": "https://cssdb.org/",
+        "id": "cssdb",
+        "category": [
+            "INFORMATION",
+            "CSS"
+        ]
+    },
+    {
+        "name": "Compress Image",
+        "description": "Compress JPG and PNG images at light speed with Browser based Image compressor.",
+        "url": "https://compressimage.io/",
+        "id": "compress-image",
+        "category": [
+            "IMAGE"
+        ]
+    },
+    {
+        "name": "Vercel",
+        "description": "Vercel's frontend cloud gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized Web.",
+        "url": "https://vercel.com/",
+        "id": "vercel",
+        "category": [
+            "WEBHOSTING"
+        ]
+    },
+    {
+        "name": "Surge.sh",
+        "description": "Static web publishing for Front-End Developers.",
+        "url": "https://surge.sh/",
+        "id": "surge-sh",
+        "category": [
+            "WEBHOSTING"
+        ]
+    },
+    {
+        "name": "Github Pages",
+        "description": "Hosted directly from your GitHub repository. Just edit, push, and your changes are live.",
+        "url": "https://pages.github.com/",
+        "id": "github-pages",
+        "category": [
+            "WEBHOSTING"
+        ]
+    },
+    {
+        "name": "Skeleton React",
+        "description": "Create React Content Loader.",
+        "url": "https://skeletonreact.com/",
+        "id": "skeleton-react",
+        "category": [
+            "REACT"
+        ]
+    },
+    {
+        "name": "Magic Pattern",
+        "description": "Beautiful pure CSS background patterns that you can actually use in your projects.",
+        "url": "https://www.magicpattern.design/tools/css-backgrounds",
+        "id": "magic-pattern",
+        "category": [
+            "CSS"
+        ]
+    },
+    {
+        "name": "The Good Lineheight",
+        "description": "The good line-height calculates the exact number so it always fits the baseline grid.",
+        "url": "https://www.thegoodlineheight.com/",
+        "id": "thegoodlineheight",
+        "category": [
+            "CSS"
+        ]
+    },
+    {
+        "name": "Svg to React",
+        "description": "svg to react.",
+        "url": "https://react-svgr.com/playground/",
+        "id": "react-svgr",
+        "category": [
+            "REACT"
+        ]
+    },
+    {
+        "name": "Tracking ECMAScript Proposals",
+        "description": "JS",
+        "url": "https://github.com/tc39/proposals",
+        "id": "tracking-ecmascript-proposals",
+        "category": [
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "Perplexity AI",
+        "description": "The answer to any question.",
+        "url": "https://www.perplexity.ai/",
+        "id": "perplexity-ai",
+        "category": [
+            "AI",
+            "INFORMATION"
+        ]
+    },
+    {
+        "name": "The React Graph Gallery",
+        "description": "Build unique charts for the web.",
+        "url": "https://www.react-graph-gallery.com/",
+        "id": "react-graph-gallery",
+        "category": [
+            "REACT"
+        ]
+    },
+    {
+        "name": "sql.js",
+        "description": "A javascript library to run SQLite on the web.",
+        "url": "https://github.com/sql-js/sql.js/",
+        "id": "sql-js",
+        "category": [
+            "JAVASCRIPT"
+        ]
+    },
+    {
+        "name": "background-removal-js-ai",
+        "description": "Remove backgrounds from images directly in the browser environment with ease and no additional costs or privacy concerns.",
+        "url": "https://github.com/imgly/background-removal-js",
+        "id": "background-removal-js",
+        "category": [
+            "JAVASCRIPT",
+            "AI"
+        ]
+    },
+    {
+        "name": "Next.js Image blurDataURL generator",
+        "description": "Convert an image into a much smaller, blurred image to display for loading, namely for Next.js Image component.",
+        "url": "https://blurred.dev/",
+        "id": "next-js-image-blurdataurl-generator",
+        "category": [
+            "IMAGE"
+        ]
+    }
+]

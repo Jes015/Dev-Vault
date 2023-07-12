@@ -1,0 +1,9 @@
+.filterSection {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+.filterSection__title {
+    font-weight: 500;
+}

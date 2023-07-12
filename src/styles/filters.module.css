@@ -1,5 +1,6 @@
 .filters {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.7em;
     margin-top: 0.4em;
 }

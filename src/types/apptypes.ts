@@ -17,7 +17,7 @@ enum ECategories {
   WEBHOSTING = 'WEBHOSTING',
 }
 
-const filterSections: filterSection = {
+const CFilterSections: filterSection = {
   LANGUAGES: [ECategories.JAVASCRIPT, ECategories.TYPESCRIPT],
   'FRAMEWORKS / LIBRARIES': [ECategories.REACT],
   DESIGN: [ECategories.COLOR, ECategories.CSS, ECategories.ICON, ECategories.ILUSTRATION, ECategories.IMAGE, ECategories.FONT, ECategories.OTHERSDESIGN],
@@ -37,6 +37,6 @@ interface ITool {
 
 type TTools = ITool[]
 
-export { ECategories, filterSections }
+export { CFilterSections, ECategories }
 export type { ITool, TTools }
 // eslint-disable-next-line no-multiple-empty-lines
